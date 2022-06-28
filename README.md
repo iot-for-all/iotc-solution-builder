@@ -84,7 +84,7 @@ Feel free to clone this project and customize it to fit a particular scenario.
 Clone the repo and install dependencies:
 
 ```bash
-git clone --depth 1 --branch main https://github.com/sseiber/iotc-solution-builder.git
+git clone --depth 1 --branch main https://github.com/iot-for-all/iotc-solution-builder.git
 cd iotc-solution-builder
 npm install
 ```
