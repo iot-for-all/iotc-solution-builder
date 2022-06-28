@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from 'react';
+import React, { FC, ReactNode, useState, createContext, useContext } from 'react';
 import { InfoModal } from './InfoModal';
 import { ConfirmModal } from './ConfirmModal';
 import { ConfigureSolutionModal } from './ConfigureSolutionModal';
@@ -34,7 +34,15 @@ const initalState: IGlobalModalContext = {
 const GlobalModalContext = createContext(initalState);
 export const useGlobalModalContext = (): IGlobalModalContext => useContext(GlobalModalContext);
 
-export const GlobalModal: React.FC<{}> = ({ children }) => {
+interface IGlobalModalProps {
+    children?: ReactNode;
+}
+
+export const GlobalModal: FC<IGlobalModalProps> = (props: IGlobalModalProps) => {
+    const {
+        children
+    } = props;
+
     const [modalStore, setModalStore] = useState({});
 
     const showModal = (showModalType: ModalTypes, showModalProps: any = {}) => {

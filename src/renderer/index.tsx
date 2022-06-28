@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { MemoryRouter as Router } from 'react-router-dom';
 import { configure } from 'mobx';
 import { store, StoreContext } from './stores/store';
@@ -16,12 +16,14 @@ configure({
 void (async () => {
     log([ModuleName, 'info'], `Starting renderer index module...`);
 
-    render(
+    const container = document.getElementById('root');
+    const root = createRoot(container);
+
+    root.render(
         <Router>
             <StoreContext.Provider value={store}>
                 <App />
             </StoreContext.Provider>
-        </Router>,
-        document.getElementById('root')
+        </Router>
     );
 })().catch();
