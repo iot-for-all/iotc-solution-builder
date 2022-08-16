@@ -74,6 +74,9 @@ You can navigate to the IoT Central application and inspect the device template 
 A data export is also configured for you which exports the raw data into an Azure Data Explorer instance with a database, and a data ingestion table and a streaming ingestion policy pre-configured for you. The raw data is also transformed into a final table with a table schema that shows the specific OPCUA variables that are subscribed.  
 <img src="./content/adxexplorer.png" alt="IoT Central Solution Builder" />
 
+# Download
+You can download the pre-built executables for the IoTC Solution Builder directly from our [release](https://github.com/barustum/iotc-solution-builder/releases) page. So far, Windows executables have been generated. We are working on adding pre-built binaries for other platforms as well.
+
 # Build the Tool
 Feel free to clone this project and customize it to fit a particular scenario.
 ## Prerequisites
