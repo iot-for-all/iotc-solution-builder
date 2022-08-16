@@ -75,7 +75,7 @@ A data export is also configured for you which exports the raw data into an Azur
 <img src="./content/adxexplorer.png" alt="IoT Central Solution Builder" />
 
 # Download
-You can download the pre-built executables for the IoTC Solution Builder directly from our [release](https://github.com/barustum/iotc-solution-builder/releases) page. So far, Windows executables have been generated. We are working on adding pre-built binaries for other platforms as well.
+You can download the pre-built executables for the IoTC Solution Builder directly from our [release](https://github.com/iot-for-all/iotc-solution-builder/releases) page. So far, Windows executables have been generated. We are working on adding pre-built binaries for other platforms as well.
 
 # Build the Tool
 Feel free to clone this project and customize it to fit a particular scenario.
