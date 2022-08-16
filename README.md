@@ -75,10 +75,10 @@ A data export is also configured for you which exports the raw data into an Azur
 <img src="./content/adxexplorer.png" alt="IoT Central Solution Builder" />
 
 # Download
-You can download the pre-built executables for the IoTC Solution Builder directly from our [release](https://github.com/iot-for-all/iotc-solution-builder/releases) page. So far, Windows executables have been generated. We are working on adding pre-built binaries for other platforms as well.
+You can download the Windows pre-built executables for the IoTC Solution Builder directly from our [release](https://github.com/iot-for-all/iotc-solution-builder/releases) page.
 
 # Build the Tool
-Feel free to clone this project and customize it to fit a particular scenario.
+In order to generate binaries for other platforms, feel free to clone this project and customize it to fit a particular scenario.
 ## Prerequisites
 * [Node.js](https://nodejs.org/en/download/) v16 or later
 * [Visual Studio Code](https://code.visualstudio.com/Download) with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension installed
