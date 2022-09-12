@@ -2389,7 +2389,7 @@
                                             },
                                             "miabgateway": {
                                                 "settings": {
-                                                    "image": "sseiber/iotc-miab-gateway:1.0.0-amd64-debug",
+                                                    "image": "iotcadapteracr.azurecr.io/unlisted/iotedge/iotc-miab-gateway:latest-amd64",
                                                     "createOptions": "{\"Hostname\":\"miabgateway\",\"ExposedPorts\":{\"9229/tcp\":{}},\"HostConfig\":{\"PortBindings\":{\"9229/tcp\":[{\"HostPort\":\"9229\"}]},\"Mounts\":[{\"Type\":\"volume\",\"Target\":\"/data/storage/\",\"Source\":\"miabgw\",\"Consistency\":\"consistent\",\"RW\":true}]}}"
                                                 },
                                                 "type": "docker",
@@ -3818,7 +3818,7 @@
                         "destinations": [
                             {
                                 "id": "${cdeDestinationName}",
-                                "transform": "{\n    schema: \"default@v1\",\n    applicationId: .applicationId,\n    deviceId: .device.id,\n    deviceName: .device.name,\n    templateId: .device.templateId,\n    messageSource: .messageSource,\n    enqueuedTime: .enqueuedTime,\n    telemetry: .telemetry | map({ key: .name, value: .value }) | from_entries,\n    messageProperties: .messageProperties,\n    enrichments: .enrichments,\n    component: .component,\n    module: .module\n}"
+                                "transform": "{\n    applicationId: .applicationId,\n    deviceId: .device.id,\n    deviceName: .device.name,\n    templateName: .device.templateName,\n    enqueuedTime: .enqueuedTime,\n    telemetry: .telemetry | map({ key: .name, value: .value }) | from_entries,\n }"
                             }
                         ]
                     }

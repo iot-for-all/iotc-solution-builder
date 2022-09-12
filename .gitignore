@@ -107,7 +107,6 @@ common/autoinstallers/*/.npmrc
 **/lib/**/*.js.map
 **/*Bundle.js
 **/*Bundle.js.map
-**/package-lock.json
 npm-debug.log.*
 
 # Mac OS #

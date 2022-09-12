@@ -1,6 +1,7 @@
 module.exports = {
     packagerConfig: {
-        icon: './src/assets/icon'
+        icon: './src/assets/icon',
+        name: 'iotc-solution-builder'
     },
     makers: [
         {
@@ -55,5 +56,16 @@ module.exports = {
                 }
             }
         ]
+    ],
+    publishers: [
+        {
+            name: '@electron-forge/publisher-github',
+            config: {
+              repository: {
+                owner: 'iot-for-all',
+                name: 'iotc-solution-builder',
+              },
+            }, 
+        }
     ]
 };
