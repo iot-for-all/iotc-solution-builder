@@ -51,7 +51,7 @@
                     },
                     "miabgateway": {
                         "settings": {
-                            "image": "sseiber/iotc-miab-gateway:1.0.0-amd64-debug",
+                            "image": "iotcadapteracr.azurecr.io/unlisted/iotedge/iotc-miab-gateway:latest-amd64-debug",
                             "createOptions": "{\"Hostname\":\"miabgateway\",\"ExposedPorts\":{\"9229/tcp\":{}},\"HostConfig\":{\"PortBindings\":{\"9229/tcp\":[{\"HostPort\":\"9229\"}]},\"Mounts\":[{\"Type\":\"volume\",\"Target\":\"/data/storage/\",\"Source\":\"miabgw\",\"Consistency\":\"consistent\",\"RW\":true}]}}"
                         },
                         "type": "docker",
